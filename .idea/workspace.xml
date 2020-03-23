@@ -5,9 +5,8 @@
       <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.691dfca1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.691dfca1.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.7db1401c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.7db1401c.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584989615067</updated>
-      <workItem from="1584989616485" duration="697000" />
+      <workItem from="1584989616485" duration="955000" />
     </task>
     <servers />
   </component>
