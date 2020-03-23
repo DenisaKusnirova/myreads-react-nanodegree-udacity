@@ -61,7 +61,7 @@ class BooksApp extends React.Component {
 
     return (
       <div className="app">
-          <BrowserRouter>
+          <BrowserRouter basename ="/my-reads">
               <div>
                 <Route exact path="/" render={() => (
                   <div>
