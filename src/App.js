@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Route, Link, BrowserRouter } from 'react-router-dom'
 import './App.css'
 import * as BooksAPI from './BooksAPI'
 import Header from './components/Header'
@@ -61,35 +61,39 @@ class BooksApp extends React.Component {
 
     return (
       <div className="app">
-        <Route exact path="/" render={() => (
-          <div>
-            <Header />
-            <Bookshelf 
-              bookshelfTitle="Currently Reading" 
-              books={books} 
-              shelfType="currentlyReading" 
-              updateBookShelf={this.updateBookShelf}
-            />
-            <Bookshelf 
-              bookshelfTitle="Want to read" 
-              books={books} 
-              shelfType="wantToRead"
-              updateBookShelf={this.updateBookShelf}
-            />
-            <Bookshelf 
-              bookshelfTitle="Read" 
-              books={books} 
-              shelfType="read"
-              updateBookShelf={this.updateBookShelf}
-            />
-            <div className="open-search">
-              <Link to="/search">Add a book</Link>
-            </div>
-          </div>
-        )} />
-        <Route path="/search" render={() => (
-          <SearchPage booksById={this.state.booksById} updateBookShelf={this.updateBookShelf} />
-        )} />
+          <BrowserRouter>
+              <div>
+                <Route exact path="/" render={() => (
+                  <div>
+                    <Header />
+                    <Bookshelf
+                      bookshelfTitle="Currently Reading"
+                      books={books}
+                      shelfType="currentlyReading"
+                      updateBookShelf={this.updateBookShelf}
+                    />
+                    <Bookshelf
+                      bookshelfTitle="Want to read"
+                      books={books}
+                      shelfType="wantToRead"
+                      updateBookShelf={this.updateBookShelf}
+                    />
+                    <Bookshelf
+                      bookshelfTitle="Read"
+                      books={books}
+                      shelfType="read"
+                      updateBookShelf={this.updateBookShelf}
+                    />
+                    <div className="open-search">
+                      <Link to="/search">Add a book</Link>
+                    </div>
+                  </div>
+                )} />
+                <Route path="/search" render={() => (
+                  <SearchPage booksById={this.state.booksById} updateBookShelf={this.updateBookShelf} />
+                )} />
+                </div>
+            </BrowserRouter>
       </div>
     )
   }
